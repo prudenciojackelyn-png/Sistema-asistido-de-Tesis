@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sistema asistido de tesis</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/UNHEVAL.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/fiismec.png" style="height: 500px;">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >INICIO</a></li>
+          <li><a href="about.html">PASOS</a></li>
+          <li><a href="resume.html"class="active">PAUTAS</a></li>
+          <li><a href="portfolio.html">PREGUNTAS FRECUENTES</a></li>
+          <li class="dropdown"><a href="#"><span>PLANTILLAS</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="assets/pdf/FUT.pdf">FUT</a></li>
+              <li><a href="assets/pdf/NOTA BIOGRÁFICA.pdf">Nota biográfica</a></li>
+              <li><a href="assets/pdf/AUTO_PUBLICACIÓN.pdf">Autorización de publicación</a></li>
+              <li><a href="assets/pdf/Declaracion_Ant_Penales.pdf">Declaración Jurada</a></li>
+              <li><a href="assets/pdf/MEMBRETE CD.pdf">Membretado de CD</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">PAGOS</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+ <div class="header-social-links">
+   <a href="https://wa.me/51929529499?text=Hola.%20Mi%20nombre%20es%20___.%20He%20realizado%20las%20adecuaciones%20de%20mi%20tesis%20según%20la%20nueva%20resolución%20y%20las%20pautas%20indicadas.%20¿Podría%20revisarla%20y%20confirmarme%20si%20está%20conforme?" target="_blank" class="whatsapp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    </div>
+  </header>
+
+<!-- SECCIÓN PAUTAS - SOLO IMÁGENES ORDENADAS -->
+<section class="pautas-simples">
+  <div class="pautas-wrapper">
+
+    <!-- IMAGEN 1 -->
+    <img src="assets/img/PAUTAS/1.png" class="pauta-img-full" alt="Paso 1">
+
+    <div class="pauta-line"></div>
+
+    <!-- IMAGEN 2 CON BOTONES -->
+    <div class="pauta-img-container">
+      <img src="assets/img/PAUTAS/2.png" class="pauta-img-full" alt="Paso 2">
+
+      <!-- Botones superpuestos -->
+      <div class="pauta2-buttons">
+        <button onclick="verEsquema('cuali')" class="btn-cuanti">CUALITATIVA</button>
+        <button onclick="verEsquema('cuanti')" class="btn-cuali">CUANTITATIVA</button>
+      </div>
+    </div>
+    <div class="pauta-line"></div>
+    <!-- IMAGEN 3 -->
+    <img src="assets/img/PAUTAS/3.png" class="pauta-img-full" alt="Paso 3">
+
+    <div class="pauta-line"></div>
+
+    <!-- IMAGEN 4 -->
+    <img src="assets/img/PAUTAS/4.png" class="pauta-img-full" alt="Paso 4">
+
+    <div class="pauta-line"></div>
+
+    <!-- IMAGEN 5 -->
+    <img src="assets/img/PAUTAS/5.png" class="pauta-img-full" alt="Paso 5">
+
+    <div class="pauta-line"></div>
+
+    <!-- IMAGEN 6 -->
+    <img src="assets/img/PAUTAS/6.png" class="pauta-img-full" alt="Paso 6">
+
+    <div class="pauta-line"></div>
+
+    <!-- IMAGEN 7 -->
+    <div class="pauta-img-container">
+      <img src="assets/img/PAUTAS/7.png" class="pauta-img-full" alt="Paso 7">
+
+      <!-- Botones superpuestos -->
+      <div class="pauta3-buttons">
+        <button onclick="verPaso7('auto')" class="btn-autog">VER PDF</button>
+      </div>
+
+  </div>
+</section>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+<script>
+function verEsquema(tipo) {
+  if (tipo === "cuali") {
+    window.open("assets/pdf/CUALITATIVA.pdf", "_blank");
+  } else {
+    window.open("assets/pdf/CUANTITATIVA.pdf", "_blank");
+  }
+}
+</script>
+<script>
+function verPaso7(uno) {
+  if (uno === "auto") {
+    window.open("assets/pdf/autorización_guía.pdf", "_blank");
+  } 
+}
+</script>
+
+</body>
+
+</html>
